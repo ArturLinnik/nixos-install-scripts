@@ -65,8 +65,7 @@ echo '
   services.openssh.enable = true;
 
   users.users.root.openssh.authorizedKeys.keys = [
-    # Replace this by your SSH pubkey!
-    "ssh-rsa AAAAAAAAAAA..."
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID48yN3EJoyop1MnTIwaNeFRQ7ngWmGpiQidYY9YATvR"
   ];
 }
 ' >> /mnt/etc/nixos/configuration.nix
